@@ -52,16 +52,20 @@ export default function CtaSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8"
+          className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8"
         >
           {[
             { value: "< 2s", label: "Avg. Diagnostic Time" },
             { value: "4", label: "Supported Languages" },
             { value: "24/7", label: "Operational Availability" },
+            { value: "10K+", label: "Incidents Resolved" },
+            { value: "99.9%", label: "Platform Uptime" },
+            { value: "87%", label: "Faster MTTR" },
+            { value: "6", label: "Industry Verticals" },
           ].map((stat, i) => (
             <div key={i}>
-              <p className="text-3xl font-black text-white">{stat.value}</p>
-              <p className="mt-1 text-xs tracking-[2px] text-muted/60 uppercase">
+              <p className="text-2xl sm:text-3xl font-black text-white">{stat.value}</p>
+              <p className="mt-1 text-[10px] sm:text-xs tracking-[2px] text-muted/60 uppercase">
                 {stat.label}
               </p>
             </div>
