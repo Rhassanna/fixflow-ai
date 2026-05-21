@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Features from "@/components/sections/Features";
 import DemoSection from "@/components/sections/DemoSection";
 import LiveDiagnosticDemo from "@/components/sections/LiveDiagnosticDemo";
+import ResultsSection from "@/components/sections/ResultsSection";
 import WorkflowSection from "@/components/sections/WorkflowSection";
 import CtaSection from "@/components/sections/CtaSection";
 
@@ -16,6 +17,7 @@ export default function Home() {
         <Features />
         <DemoSection />
         <LiveDiagnosticDemo />
+        <ResultsSection />
         <WorkflowSection />
         <CtaSection />
       </main>
